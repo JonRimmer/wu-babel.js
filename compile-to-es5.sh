@@ -15,16 +15,16 @@ BABEL="./node_modules/babel/bin/babel/index.js"
 $BABEL                              \
     --source-maps                   \
     --out-file ./es5/wu.js          \
-		--modules umd                   \
+    --modules umd                   \
     ./es6/wu.js
-		
+
 # Compile wu.js to ES5 with external helpers
 
 $BABEL                              \
     --source-maps                   \
-		--out-file ./es5/standalone.js  \
-		--modules umd                   \
-		--optional runtime              \
-		./es6/wu.js
+    --out-file ./es5/standalone.js  \
+    --modules umd                   \
+    --optional runtime              \
+    ./es6/wu.js
 
 echo "OK"
