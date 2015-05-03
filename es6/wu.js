@@ -41,7 +41,7 @@ export default (function () {
       }
 
       // Check if `Symbol.iterator` exists and use that if possible.
-      if (typeof Symbol === "function") { // && typeof Symbol.iterator === "symbol") {
+      if (typeof Symbol === "function") {
         return Symbol.iterator;
       }
 			
