@@ -17,7 +17,7 @@ npm install wu-babel
 
 ## Usage
 
-`wu-babel` depends on (Babel's polyfill)[http://babeljs.io/docs/usage/polyfill/] being loaded.
+`wu-babel` depends on [Babel's polyfill](http://babeljs.io/docs/usage/polyfill/) being loaded.
 See the Babel documentation for information on how to do this in different environments.
 
 ### ES5 Compatible Browsers
