@@ -1,3 +1,6 @@
+import wu from '../es6/wu';
+import { assert } from 'chai';
+
 describe("wu.zip", () => {
   it("should zip two iterables together", () => {
     assert.eqArray([["a", 1], ["b", 2], ["c", 3]],

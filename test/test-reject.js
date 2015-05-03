@@ -1,3 +1,6 @@
+import wu from '../es6/wu';
+import { assert } from 'chai';
+
 describe("wu.reject", () => {
   it("should yield items for which the predicate is false", () => {
     assert.eqArray([1, true, {}],

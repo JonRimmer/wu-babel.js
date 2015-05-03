@@ -1,3 +1,6 @@
+import wu from '../es6/wu';
+import { assert } from 'chai';
+
 describe("wu.zipLongest", () => {
   it("should stop with the longer iterable", () => {
     const arr1 = [];

@@ -1,3 +1,6 @@
+import wu from '../es6/wu';
+import { assert } from 'chai';
+
 describe("wu.unzip", () => {
   it("should create iterables from zipped items", () => {
     const pairs = [

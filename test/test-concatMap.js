@@ -1,3 +1,6 @@
+import wu from '../es6/wu';
+import { assert } from 'chai';
+
 describe("wu.concatMap", () => {
   it("should map the function over the iterable and concatenate results", () => {
     assert.eqArray([1, 1, 2, 4, 3, 9],

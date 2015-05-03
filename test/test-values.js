@@ -1,3 +1,6 @@
+import wu from '../es6/wu';
+import { assert } from 'chai';
+
 describe("wu.values", () => {
   it("should iterate over values", () => {
     assert.eqSet(new Set([1, 2, 3]),

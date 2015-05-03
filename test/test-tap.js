@@ -1,3 +1,6 @@
+import wu from '../es6/wu';
+import { assert } from 'chai';
+
 describe("wu.tap", () => {
   it("should perform side effects and yield the original item", () => {
     let i = 0;

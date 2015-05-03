@@ -1,3 +1,6 @@
+import wu from '../es6/wu';
+import { assert } from 'chai';
+
 describe("wu.invoke", () => {
   it("should yield the method invokation on each item", () => {
     function Greeter(name) {

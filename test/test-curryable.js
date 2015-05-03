@@ -1,3 +1,6 @@
+import wu from '../es6/wu';
+import { assert } from 'chai';
+
 describe("wu.curryable", () => {
   it("should wait until its given enough arguments", () => {
     var f = wu.curryable((a, b) => a + b);

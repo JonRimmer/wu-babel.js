@@ -1,3 +1,6 @@
+import wu from '../es6/wu';
+import { assert } from 'chai';
+
 describe("wu.map", () => {
   it("should map the function over the iterable", () => {
     assert.eqArray([1, 4, 9],

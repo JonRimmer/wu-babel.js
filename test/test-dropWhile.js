@@ -1,3 +1,6 @@
+import wu from '../es6/wu';
+import { assert } from 'chai';
+
 describe("wu.dropWhile", () => {
   it("should drop items while the predicate is true", () => {
     const count = wu.dropWhile(x => x < 5, wu.count());

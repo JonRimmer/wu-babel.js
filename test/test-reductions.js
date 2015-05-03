@@ -1,3 +1,6 @@
+import wu from '../es6/wu';
+import { assert } from 'chai';
+
 describe("wu.reductions", () => {
   it("should yield the intermediate reductions of the iterable", () => {
     assert.eqArray([1, 3, 6],

@@ -1,3 +1,6 @@
+import wu from '../es6/wu';
+import { assert } from 'chai';
+
 describe("wu.has", () => {
   it("should return true if the item is in the iterable", () => {
     assert.ok(wu.has(3, [1,2,3]));

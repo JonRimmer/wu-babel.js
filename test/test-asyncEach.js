@@ -1,3 +1,6 @@
+import wu from '../es6/wu';
+import { assert } from 'chai';
+
 describe("wu.asyncEach", () => {
   it("should iterate over each item", () => {
     const arr = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];

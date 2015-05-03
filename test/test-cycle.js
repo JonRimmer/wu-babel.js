@@ -1,3 +1,6 @@
+import wu from '../es6/wu';
+import { assert } from 'chai';
+
 describe("wu.cycle", () => {
   it("should keep yielding items from the original iterable", () => {
     let i = 0;

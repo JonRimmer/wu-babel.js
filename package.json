@@ -1,12 +1,12 @@
 {
-  "name": "wu",
-  "description": "Combinators for ECMAScript 6 iterators.",
+  "name": "wu-babel",
+  "description": "A Babel compatible version of wu.js",
   "author": {
-    "name": "Nick Fitzgerald",
-    "email": "fitzgen@gmail.com",
-    "url": "http://fitzgeraldnick.com"
+    "name": "Jon Rimmer",
+    "email": "jon.rimmer@gmail.com",
+    "url": "http://blog.brillskills.com"
   },
-  "bugs": "http://github.com/fitzgen/wu.js/issues",
+  "bugs": "http://github.com/jonrimmer/wu-babel/issues",
   "licenses": [
     {
       "type": "MIT",
@@ -15,16 +15,19 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/fitzgen/wu.js.git"
+    "url": "git://github.com/jonrimmer/wu-babel.git"
   },
-  "url": "http://fitzgen.github.com/wu.js",
+  "url": "https://github.com/jonrimmer/wu-babel",
   "version": "2.0.0",
-  "main": "wu.es5.js",
+  "main": "./es5/wu.js",
   "scripts": {
-    "docs": "bundle exec jekyll serve --watch",
-    "build": "./compile-to-es5.sh"
+    "build": "./compile-to-es5.sh",
+    "test": "./node_modules/mocha/bin/mocha --compilers js:babel/register --require ./test/helper"
   },
-  "dependencies": {
-    "traceur": "0.0.55"
+  "dependencies": {},
+  "devDependencies": {
+    "babel": "^5.2.6",
+    "chai": "^2.3.0",
+    "mocha": "^2.2.4"
   }
 }

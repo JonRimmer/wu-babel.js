@@ -1,3 +1,6 @@
+import wu from '../es6/wu';
+import { assert } from 'chai';
+
 describe("wu.forEach", () => {
   it("should iterate over every item", () => {
     const items = [];

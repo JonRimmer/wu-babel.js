@@ -1,3 +1,6 @@
+import wu from '../es6/wu';
+import { assert } from 'chai';
+
 describe("wu.pluck", () => {
   it("should access the named property of each item in the iterable", () => {
     assert.eqArray([1, 2, 3],

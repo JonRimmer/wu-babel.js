@@ -1,3 +1,6 @@
+import wu from '../es6/wu';
+import { assert } from 'chai';
+
 describe("wu.count", () => {
   it("should keep incrementing", () => {
     const count = wu.count();

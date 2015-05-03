@@ -1,3 +1,6 @@
+import wu from '../es6/wu';
+import { assert } from 'chai';
+
 describe("wu.entries", () => {
   it("should iterate over entries", () => {
     const expected = new Map([["foo", 1], ["bar", 2], ["baz", 3]]);

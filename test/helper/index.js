@@ -1,4 +1,5 @@
-window.assert = chai.assert;
+import { assert } from 'chai';
+import wu from '../../es6/wu';
 
 // Helper for asserting that the given thing is iterable.
 assert.iterable = thing => {
@@ -23,4 +24,4 @@ assert.eqArray = (expected, actual) => {
   assert.deepEqual(expected, [...actual]);
 };
 
-mocha.setup('bdd');
+export { assert };

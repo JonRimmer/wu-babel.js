@@ -1,3 +1,6 @@
+import wu from '../es6/wu';
+import { assert } from 'chai';
+
 describe("wu.tee", () => {
   it("should clone iterables", () => {
     const factorials = wu(wu.count(1)).reductions((a, b) => a * b);

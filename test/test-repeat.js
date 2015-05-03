@@ -1,3 +1,6 @@
+import wu from '../es6/wu';
+import { assert } from 'chai';
+
 describe("wu.repeat", () => {
   it("should keep yielding its item", () => {
     const repeat = wu.repeat(3);

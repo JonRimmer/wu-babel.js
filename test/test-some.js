@@ -1,3 +1,6 @@
+import wu from '../es6/wu';
+import { assert } from 'chai';
+
 describe("wu.some", () => {
   it("should return true if any item matches the predicate", () => {
     assert.ok(wu.some(x => x % 2 === 0, [1,2,3]));

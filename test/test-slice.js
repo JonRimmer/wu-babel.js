@@ -1,3 +1,6 @@
+import wu from '../es6/wu';
+import { assert } from 'chai';
+
 describe("wu.slice", () => {
   it("should slice the front of iterables", () => {
     assert.eqArray([3, 4, 5],

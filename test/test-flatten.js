@@ -1,3 +1,6 @@
+import wu from '../es6/wu';
+import { assert } from 'chai';
+
 describe("wu.flatten", () => {
   it("should flatten iterables", () => {
     assert.eqArray(["I", "like", "LISP"],

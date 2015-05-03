@@ -1,3 +1,6 @@
+import wu from '../es6/wu';
+import { assert } from 'chai';
+
 describe("wu.find", () => {
   it("should return the first item that matches the predicate", () => {
     assert.deepEqual({ name: "rza" },

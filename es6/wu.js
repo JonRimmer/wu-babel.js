@@ -1,21 +1,5 @@
-(function (root, factory) {
-  if (typeof define === "function" && define.amd) {
-    define(factory);
-  } else if (typeof exports === "object") {
-    require("traceur/bin/traceur-runtime");
-    module.exports = factory();
-  } else {
-    const oldWu = root.wu;
-    root.wu = factory();
-    root.wu.noConflict = () => {
-      const wu = root.wu;
-      root.wu = oldWu;
-      return wu;
-    };
-  }
-}(this, function () {
+export default (function () {
   "use strict";
-
 
   function wu(iterable) {
     if (!isIterable(iterable)) {
@@ -57,9 +41,12 @@
       }
 
       // Check if `Symbol.iterator` exists and use that if possible.
-      if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
+      if (typeof Symbol === "function") { // && typeof Symbol.iterator === "symbol") {
         return Symbol.iterator;
       }
+			
+			console.log(typeof Symbol);
+			console.log(typeof Symbol.iterator);
 
       throw new Error("Cannot find iterator symbol.");
     }())
@@ -600,4 +587,4 @@
   return wu;
 
 
-}));
+})();

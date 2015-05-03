@@ -1,3 +1,6 @@
+import wu from '../es6/wu';
+import { assert } from 'chai';
+
 describe("wu.every", () => {
   it("should return true when the predicate succeeds for all items", () => {
     assert.equal(true, wu.every(x => typeof x === "number", [1, 2, 3]));

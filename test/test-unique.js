@@ -1,3 +1,6 @@
+import wu from '../es6/wu';
+import { assert } from 'chai';
+
 describe("wu.unique", () => {
   it("should yield only the unique items from the iterable", () => {
     assert.eqArray([1, 2, 3],
